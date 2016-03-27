@@ -1,0 +1,422 @@
+The collections have loaded successfully.
+
+
+********** Welcome to the Collection Manager. **********
+COMMAND    FUNCTION
+  ci         Check in an item
+  co         Check out an item
+  ab         Add a new book
+  am         Add a new movie
+  db         Display books
+  dm         Display movies
+  qb         Query for books
+  qm         Query for movies
+  x          Exit
+Please enter a command to proceed: db
+ID: 17001
+Title: My Best Book Ever
+Author: Joseph Caldwell
+Publisher: FPG Publishing
+Pages: 317
+Year: 2014
+Copies: 3
+Available: 3
+
+ID: 17002
+Title: Robert's Rules
+Author: Robert Hett Chapman
+Publisher: Manning Hall Press
+Pages: 199
+Year: 2011
+Copies: 1
+Available: 1
+
+ID: 17003
+Title: View from the Top
+Author: Joseph Caldwell
+Publisher: FPG Publishing
+Pages: 545
+Year: 2014
+Copies: 1
+Available: 1
+
+ID: 17004
+Title: A River
+Author: Elisha Mitchell
+Publisher: FPG Publishing
+Pages: 345
+Year: 2014
+Copies: 2
+Available: 2
+
+ID: 17005
+Title: Winding Trails
+Author: David Lowry Swain
+Publisher: FPG Publishing
+Pages: 1234
+Year: 2014
+Copies: 1
+Available: 1
+
+ID: 17006
+Title: The Fork and the Spoon
+Author: Charles Phillips
+Publisher: FPG Publishing
+Pages: 346
+Year: 2011
+Copies: 1
+Available: 1
+
+ID: 17007
+Title: Purple Iron Frog
+Author: Kemp Plummer Battle
+Publisher: FPG Publishing
+Pages: 456
+Year: 2012
+Copies: 3
+Available: 3
+
+ID: 17008
+Title: Titanium Boxer
+Author: George Tayloe Winston
+Publisher: FPG Publishing
+Pages: 345
+Year: 2010
+Copies: 1
+Available: 1
+
+ID: 17009
+Title: Yellow Zinc
+Author: George Tayloe Winston
+Publisher: FPG Publishing
+Pages: 873
+Year: 2014
+Copies: 5
+Available: 5
+
+ID: 17010
+Title: Blue Snake
+Author: Edwin Anderson Alderman
+Publisher: FPG Publishing
+Pages: 434
+Year: 2013
+Copies: 1
+Available: 1
+
+Press enter to show more items, or type 'm' to return to the menu.
+ID: 17011
+Title: Frankfort
+Author: Francis Preston Venable
+Publisher: FPG Publishing
+Pages: 457
+Year: 2012
+Copies: 2
+Available: 2
+
+ID: 17012
+Title: My Time in Space
+Author: Solomon Pool
+Publisher: FPG Publishing
+Pages: 237
+Year: 2014
+Copies: 2
+Available: 2
+
+ID: 17013
+Title: Moonshot
+Author: Charles Phillips
+Publisher: Dean Smith Imprints
+Pages: 262
+Year: 2011
+Copies: 2
+Available: 2
+
+ID: 17014
+Title: Shoot and Miss
+Author: Kemp Plummer Battle
+Publisher: Dean Smith Imprints
+Pages: 346
+Year: 2014
+Copies: 1
+Available: 1
+
+ID: 17015
+Title: Aim High
+Author: George Tayloe Winston
+Publisher: Manning Hall Press
+Pages: 663
+Year: 2014
+Copies: 5
+Available: 5
+
+ID: 17016
+Title: Love and War
+Author: Edwin Anderson Alderman
+Publisher: Manning Hall Press
+Pages: 345
+Year: 2014
+Copies: 1
+Available: 1
+
+ID: 17017
+Title: Toy Students
+Author: Francis Preston Venable
+Publisher: Manning Hall Press
+Pages: 792
+Year: 2011
+Copies: 1
+Available: 1
+
+ID: 17018
+Title: Past and Future
+Author: Edward Kidder Graham
+Publisher: Manning Hall Press
+Pages: 108
+Year: 2012
+Copies: 5
+Available: 5
+
+ID: 17019
+Title: Lucky Nine
+Author: Marvin Hendrix Stacy
+Publisher: Manning Hall Press
+Pages: 1012
+Year: 2010
+Copies: 1
+Available: 1
+
+ID: 17020
+Title: Technology and History
+Author: Harry Woodburn Chase
+Publisher: Manning Hall Press
+Pages: 1321
+Year: 2014
+Copies: 5
+Available: 5
+
+Press enter to show more items, or type 'm' to return to the menu: m
+
+
+********** Welcome to the Collection Manager. **********
+COMMAND    FUNCTION
+  ci         Check in an item
+  co         Check out an item
+  ab         Add a new book
+  am         Add a new movie
+  db         Display books
+  dm         Display movies
+  qb         Query for books
+  qm         Query for movies
+  x          Exit
+Please enter a command to proceed: qb
+Enter a query string to use for the search: ill
+ID: 17006
+Title: The Fork and the Spoon
+Author: Charles Phillips
+Publisher: FPG Publishing
+Pages: 346
+Year: 2011
+Copies: 1
+Available: 1
+
+ID: 17013
+Title: Moonshot
+Author: Charles Phillips
+Publisher: Dean Smith Imprints
+Pages: 262
+Year: 2011
+Copies: 2
+Available: 2
+
+
+
+********** Welcome to the Collection Manager. **********
+COMMAND    FUNCTION
+  ci         Check in an item
+  co         Check out an item
+  ab         Add a new book
+  am         Add a new movie
+  db         Display books
+  dm         Display movies
+  qb         Query for books
+  qm         Query for movies
+  x          Exit
+Please enter a command to proceed: ci
+Enter the ID for the item you wish to check in: 17013
+All copies are already available, so this item can not be checked in.
+
+
+********** Welcome to the Collection Manager. **********
+COMMAND    FUNCTION
+  ci         Check in an item
+  co         Check out an item
+  ab         Add a new book
+  am         Add a new movie
+  db         Display books
+  dm         Display movies
+  qb         Query for books
+  qm         Query for movies
+  x          Exit
+Please enter a command to proceed: co
+Enter the ID for the item you wish to check out: 17013
+Your check out has succeeded.
+ID: 17013
+Title: Moonshot
+Author: Charles Phillips
+Publisher: Dean Smith Imprints
+Pages: 262
+Year: 2011
+Copies: 2
+Available: 1
+
+
+
+********** Welcome to the Collection Manager. **********
+COMMAND    FUNCTION
+  ci         Check in an item
+  co         Check out an item
+  ab         Add a new book
+  am         Add a new movie
+  db         Display books
+  dm         Display movies
+  qb         Query for books
+  qm         Query for movies
+  x          Exit
+Please enter a command to proceed: co
+Enter the ID for the item you wish to check out: 17013
+Your check out has succeeded.
+ID: 17013
+Title: Moonshot
+Author: Charles Phillips
+Publisher: Dean Smith Imprints
+Pages: 262
+Year: 2011
+Copies: 2
+Available: 0
+
+
+
+********** Welcome to the Collection Manager. **********
+COMMAND    FUNCTION
+  ci         Check in an item
+  co         Check out an item
+  ab         Add a new book
+  am         Add a new movie
+  db         Display books
+  dm         Display movies
+  qb         Query for books
+  qm         Query for movies
+  x          Exit
+Please enter a command to proceed: co
+Enter the ID for the item you wish to check out: 17013
+No copies of the item are available for check out.
+
+
+********** Welcome to the Collection Manager. **********
+COMMAND    FUNCTION
+  ci         Check in an item
+  co         Check out an item
+  ab         Add a new book
+  am         Add a new movie
+  db         Display books
+  dm         Display movies
+  qb         Query for books
+  qm         Query for movies
+  x          Exit
+Please enter a command to proceed: ci
+Enter the ID for the item you wish to check in: 17013
+Your check in has succeeded.
+ID: 17013
+Title: Moonshot
+Author: Charles Phillips
+Publisher: Dean Smith Imprints
+Pages: 262
+Year: 2011
+Copies: 2
+Available: 1
+
+
+
+********** Welcome to the Collection Manager. **********
+COMMAND    FUNCTION
+  ci         Check in an item
+  co         Check out an item
+  ab         Add a new book
+  am         Add a new movie
+  db         Display books
+  dm         Display movies
+  qb         Query for books
+  qm         Query for movies
+  x          Exit
+Please enter a command to proceed: ab
+Please enter the following attributes for the new book.
+Title: Best Biography Ever
+Author: David Gotz
+Publisher: Vanity Self Publishing
+Pages: 1017
+Year: 2015
+Copies: 5
+You have entered the following data:
+Title: Best Biography Ever
+Author: David Gotz
+Publisher: Vanity Self Publishing
+Pages: 1017
+Year: 2015
+Copies: 5
+Available: 5
+
+Press enter to add this item to the collection.  Enter 'x' to cancel.
+
+
+********** Welcome to the Collection Manager. **********
+COMMAND    FUNCTION
+  ci         Check in an item
+  co         Check out an item
+  ab         Add a new book
+  am         Add a new movie
+  db         Display books
+  dm         Display movies
+  qb         Query for books
+  qm         Query for movies
+  x          Exit
+Please enter a command to proceed: qb
+Enter a query string to use for the search: Gotz
+ID: 3033
+Title: Best Biography Ever
+Author: David Gotz
+Publisher: Vanity Self Publishing
+Pages: 1017
+Year: 2015
+Copies: 5
+Available: 5
+
+
+
+********** Welcome to the Collection Manager. **********
+COMMAND    FUNCTION
+  ci         Check in an item
+  co         Check out an item
+  ab         Add a new book
+  am         Add a new movie
+  db         Display books
+  dm         Display movies
+  qb         Query for books
+  qm         Query for movies
+  x          Exit
+Please enter a command to proceed: BadCommand
+Unknown command.  Please try again.
+
+
+********** Welcome to the Collection Manager. **********
+COMMAND    FUNCTION
+  ci         Check in an item
+  co         Check out an item
+  ab         Add a new book
+  am         Add a new movie
+  db         Display books
+  dm         Display movies
+  qb         Query for books
+  qm         Query for movies
+  x          Exit
+Please enter a command to proceed: x
+

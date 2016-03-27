@@ -30,4 +30,13 @@ This repository follows the course of Algorithm Analysis.
   - GCD
   - UtopianTree
 
-
+## basic-library-example
++ This program supports the following functions:
+  - load books/movies data from disk;
+  - Check in a book/movie
+  - Check out a book/movie
+  - Add a new book/movie
+  - Display all books
+  - Display all movies
+  - Query books through keywords
+  - Query movies through keywords
