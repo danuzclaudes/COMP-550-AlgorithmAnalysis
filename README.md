@@ -18,10 +18,37 @@ This repository follows the course of Algorithm Analysis.
 + Review for Data structures in Java by weiss
   - comp410-data-structure-review.md
 
+## coursera-algorithmic-toolbox
++ dynamic programming
+  - EditDistance.java: Compute the Edit Distance Between Two Strings
+  - Knapsack.java:
+    - Discrete Knapsack (with repetition)
+    - Discrete Knapsack (without repetition)
+  - LCS3.java: Longest Common Subsequence of Three Sequences
+  - PlacingParentheses.java: Maximize the Value of an Arithmetic Expression
+  - PrimitiveCalculator.java:
++ greedy
+  - Change.java: Changing money optimally
+  - CoveringPoints.java: Grouping Children/Covering points by segments
+  - CoveringSegments.java: Covering Segments by Points
+    - Test cases design example
+  - DifferentSummands.java: Pairwise Distinct Summands
+  - DotProduct.java: Minimum Dot Product
+  - FractionalKnapsack.java: Find the max value of fractions of items to fit the knapsack
++ growth rate/asymptotic notation
+  - FibonacciHugeModulo.java: Huge Fibonacci Number modulo m.
+  - FibonacciLastDigit.java: Find the Last Digit of a Large Fibonacci Number
+  - FibonacciPrint.java: Print first N Fibonacci numbers
+  - LCM.java: Least Common Multiple; lcm * gcd = a * b
+  - NumArrayGCD.java: Compute GCD for an array of integers
++ stress testing
+  - MaxPairwiseProduct.java: Stress test example
+  - RandomRange.java: 
+
 ## java-docs
 + Java Docs from Oracle
 
-## recursion_vs_iterative
+## recursion-vs-iterative
 + Comparasion on recursive methods with iterative
   - Binary Search
   - ConsecutiveTermSum
@@ -40,3 +67,6 @@ This repository follows the course of Algorithm Analysis.
   - Display all movies
   - Query books through keywords
   - Query movies through keywords
+
+## background-timer-toy
+Toy example of a Java multi-threaded timer with UI.
