@@ -32,7 +32,7 @@ This repository follows the course of Algorithm Analysis.
   - CoveringPoints.java: Grouping Children/Covering points by segments
   - `CoveringSegments.java`: Covering Segments by Points
     - Test cases design example
-    - while f(i) <= f(i) + c -> dead loop bug (always true; must fix right)
+    - BUG: while f(i) <= f(i) + c -> dead loop (since always true; must fix right)
   - `DifferentSummands.java`: Pairwise Distinct Summands
   - DotProduct.java: Minimum Dot Product
   - `FractionalKnapsack.java`: Find the max value of fractions of items to fit the knapsack
@@ -41,7 +41,7 @@ This repository follows the course of Algorithm Analysis.
   - Inversions.java
   - `MajorityElement.java`: Check if sequence has a majority element
   - `PointsAndSegments.java`: Count for each point # segments containing it
-  - QSort_3WayPartition.java: Quick Sort with equal entries; 3-way partitioning
+  - QSort-3WayPartition.java: Quick Sort with equal entries; 3-way partitioning
 + growth rate/asymptotic notation
   - `FibonacciHugeModulo.java`: Huge Fibonacci Number modulo m.
   - FibonacciLastDigit.java: Find the Last Digit of a Large Fibonacci Number
@@ -50,7 +50,22 @@ This repository follows the course of Algorithm Analysis.
   - NumArrayGCD.java: Compute GCD for an array of integers
 + stress testing
   - `MaxPairwiseProduct.java`: Stress test example
-  - RandomRange.java: 
+  - RandomRange.java
+
+## coursera-data-structures
++ list-stack-tree
+  - check-brackets.java: Check if brackets are balanced
+  - `process-packages.java`:
+    - Network packet processing simulation.
+    - Store request before processing...until finishes
+    - Start time of a request is at least its arrival time Ai
+    - A request starts after last popped-out request finishes, or immediately if idle
+  - `tree-height-N-children.java`:
+    - arbitrary tree, not necessarily a binary tree
+    - Height(tree) is the distance from the deepest leaf to root
+    - Trace to upper level and count on the way...
+    - parent[i] helps identifying a leaf + trace upwards
+    - BUG: outer-loop iterator i changed through inner-loop? -> must fix it by next iteration
 
 ## java-docs
 + Java Docs from Oracle
