@@ -66,6 +66,10 @@ This repository follows the course of Algorithm Analysis.
     - Trace to upper level and count on the way...
     - parent[i] helps identifying a leaf + trace upwards
     - BUG: outer-loop iterator i changed through inner-loop? -> must fix it by next iteration
++ priorityQueue-disjointSets
+  - BuildHeap.java: Convert an array into min-heap, with 0-index
+  - `ParallelJobQueue.java`: Simulate to process jobs in parallel; wait for the 1st free thread
+  - MergingTables.java: Simulate merge operations with tables in a database.
 
 ## java-docs
 + Java Docs from Oracle
