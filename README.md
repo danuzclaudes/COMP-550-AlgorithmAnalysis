@@ -53,7 +53,7 @@ This repository follows the course of Algorithm Analysis.
   - RandomRange.java
 
 ## coursera-data-structures
-+ list-stack-tree
++ list stack tree
   - check-brackets.java: Check if brackets are balanced
   - `process-packages.java`:
     - Network packet processing simulation.
@@ -66,10 +66,33 @@ This repository follows the course of Algorithm Analysis.
     - Trace to upper level and count on the way...
     - parent[i] helps identifying a leaf + trace upwards
     - BUG: outer-loop iterator i changed through inner-loop? -> must fix it by next iteration
-+ priorityQueue-disjointSets
++ priority queues | disjoint sets
   - BuildHeap.java: Convert an array into min-heap, with 0-index
   - `ParallelJobQueue.java`: Simulate to process jobs in parallel; wait for the 1st free thread
   - MergingTables.java: Simulate merge operations with tables in a database.
++ hashtables
+  - HashChains.java: Build a HashSet using separate chaining
+  - PhoneBook.java: Query contact names by phone numbers; Universal Hash Family
+  - `RabinKarp.java`:
+    - GetOccurrences():
+      - Traverse all substrings of size |P|. If hash(P) != hash(S), not match; o.w., check if equal.
+    - PrecomputeHashes():
+      - Hashes for all substrings of size |P|
+      - H[i] denotes the hash of i: 0..|T|-|P| -> array H's size is |T|-|P|+1
+      - Compute the hash of last substring i=|T|-|P| by Polynomial hash family
+      - Generate x^|P|
+      - `H[i] = (x*H[i + 1] + T[i] - T[i + |P|]*x^|P|) mod p`
+    - NextPrime():
+      - Must choose `p >> |P|*|T|` to ignore false alarms
+      - Increase one by one until finding a prime number.
+      - To test whether a number is prime or not, try dividing it by numbers from 2 to sqrt(n).
+    - IsPrime():
+    - `HashFuction(): Polynomial hash family`
+      - Must choose a big prime and multiplier;
+      - `h = (S[i] + h * x) % p`
+      - Integer ovreflow: store into long type
+    - Take modular with negative numbers: `(...T[i]-...) mod p`
+      - add p to the result and take modulo p again: `int x = ((a - b) % p + p) % p`
 
 ## java-docs
 + Java Docs from Oracle
