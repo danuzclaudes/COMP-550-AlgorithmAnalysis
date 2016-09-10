@@ -44,7 +44,7 @@ public class tree_height_N_ary {
         boolean readFiles = true;
 
         void read() throws IOException {
-            File folder = new File("/home/chongrui/Downloads/pa1/pa1-tree");
+            File folder = new File("/path/to/pa1-tree");  // Please change workspace.
             if (! folder.exists()) {
                 FastScanner in = new FastScanner();
                 n = in.nextInt();
@@ -82,6 +82,7 @@ public class tree_height_N_ary {
                 reader.close();
             }
         }
+        /** O(N*h) */
         int computeHeight_naive() {
             // Replace this code with a faster implementation
             int maxHeight = 0;
@@ -94,34 +95,18 @@ public class tree_height_N_ary {
             return maxHeight;
         }
 
-        /**
-         * Key Idea:
-         * How to identify root? -1 in the cell...
-         * How to identify leaf? missing in parent array:
-         *     parent[i] is node i's parent,
-         *     i.e. an internal node;
-         *     e.g. -1 0 4 0 3, 1 & 2 are leaves
-         * How to identify deepest leaf? trace to upper level:
-         *     while current node is not root,
-         *     count the path length,
-         *     and go to its parent: i = parent[i]
-         *
-         * @return  the height of tree, i.e. path length from
-         *          deepest leaf to root + 1
-         */
+        /** O(N*h) but with Memoization; h(i) = h(p[i]) + 1. */
         int computeHeight_fast() {
-            int maxHeight = 0, root = -1;
-            // Identify root first? each node i stops at p[i]=-1=root
-            for (int j = 0; j < n; j++) {
-                /* BZ: change outer iterator in both outer and inner loop? */
-                int currentHeight = 0, i = j;
-                while (parent[i] != root) {
-                    i = parent[i];
-                    currentHeight++;
-                }
-                maxHeight = Math.max(maxHeight, currentHeight);
-            }
-            return maxHeight + 1;
+            int[] heights = new int[n];
+            int maxHeight = 0;
+            for (int i = 0; i < n; i++) maxHeight = Math.max(maxHeight, dp(i, heights));
+            return maxHeight;
+        }
+        private int dp(int i, int[] heights) {
+            if (parent[i] == -1) { heights[i] = 1; return 1; }
+            if (heights[i] != 0) return heights[i];
+            heights[i] = dp(parent[i], heights) + 1;
+            return heights[i];
         }
 
         /**
@@ -132,7 +117,8 @@ public class tree_height_N_ary {
             long start = System.currentTimeMillis();
             int fast   = computeHeight_fast();
             long end   = System.currentTimeMillis();
-            int naive  = computeHeight_naive(); // int naive = fast;
+            int naive  = computeHeight_naive();
+            // int naive = fast;
             System.out.println((naive == fast ? "OK" :
                     "Error!") + " naive=" + naive + " fast=" + fast + 
                     " timing=" + (end - start));
